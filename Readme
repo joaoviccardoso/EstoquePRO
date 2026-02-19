@@ -1,0 +1,202 @@
+📦 Sistema EstoquePro
+
+Sistema web completo para controle de estoque, gestão de clientes, fornecedores, pedidos, relatórios e emissão de Nota Fiscal, desenvolvido com foco em performance, segurança e organização empresarial.
+
+📌 Sobre o Projeto
+
+O EstoquePro é um sistema de gestão empresarial (ERP simplificado) que permite:
+
+Controle completo de estoque
+
+Cadastro e gerenciamento de clientes
+
+Cadastro de fornecedores
+
+Criação e gestão de pedidos
+
+Geração de relatórios estratégicos
+
+Emissão e armazenamento de Nota Fiscal (NF-e)
+
+O sistema foi projetado seguindo requisitos funcionais, não funcionais e regras de negócio bem definidas, garantindo organização, segurança e escalabilidade.
+
+🏗️ Arquitetura do Sistema
+
+O projeto será estruturado seguindo o padrão MVC (Model-View-Controller):
+
+Model → Regras de negócio e conexão com banco de dados
+
+View → Interface web responsiva
+
+Controller → Camada intermediária entre regras e interface
+
+⚙️ Funcionalidades
+🔐 Autenticação e Usuários
+
+Login por e-mail ou CPF + senha
+
+Perfis de acesso:
+
+👑 Administrador
+
+🛒 Vendedor
+
+Controle de permissões por perfil
+
+Registro de logins (data, hora e usuário)
+
+👥 Gestão de Clientes
+
+Cadastro, edição e exclusão
+
+Pesquisa por nome ou CPF/CNPJ
+
+Histórico de pedidos por cliente
+
+Validação de CPF/CNPJ único
+
+🏢 Gestão de Fornecedores
+
+Cadastro, edição e exclusão
+
+Associação obrigatória de produtos a fornecedores
+
+Validação de CNPJ único
+
+📦 Gestão de Produtos
+
+Código único
+
+Preço obrigatório (> 0)
+
+Definição de estoque mínimo
+
+Alerta automático de estoque baixo
+
+Associação obrigatória a fornecedor
+
+📊 Controle de Estoque
+
+Entrada manual de produtos
+
+Baixa automática ao finalizar pedido
+
+Registro de movimentações (data e usuário)
+
+Bloqueio de estoque negativo
+
+🧾 Pedidos
+
+Criação de pedidos vinculados ao cliente
+
+Seleção de múltiplos produtos
+
+Validação de estoque antes de finalizar
+
+Atualização automática do estoque
+
+Histórico armazenado por no mínimo 12 meses
+
+📈 Relatórios
+
+Relatório de vendas por período
+
+Produtos mais vendidos
+
+Estoque atual
+
+Produtos com estoque baixo
+
+Exportação em PDF ou Excel
+
+Filtros por período, produto e vendedor
+
+🧾 Emissão de Nota Fiscal
+
+Geração de NF a partir de pedido finalizado
+
+Integração com API externa
+
+Armazenamento do XML
+
+Consulta de status
+
+Download do XML
+
+🔒 Requisitos Não Funcionais
+
+Sistema 100% Web
+
+Compatível com:
+
+Google Chrome
+
+Microsoft Edge
+
+Mozilla Firefox
+
+Suporte para até 200 usuários simultâneos
+
+Tempo máximo de resposta: 2 segundos
+
+Banco de dados: PostgreSQL
+
+Backup diário automático
+
+Criptografia de senhas
+
+Conexão segura via TLS/SSL
+
+Interface responsiva (Desktop e Tablet)
+
+📋 Regras de Negócio Importantes
+
+Apenas usuários cadastrados podem acessar
+
+Senha mínima de 8 caracteres (letras + números)
+
+CPF/CNPJ único no sistema
+
+Produto não pode ficar sem fornecedor
+
+Estoque não pode ser negativo
+
+Produto com estoque zero não pode ser vendido
+
+NF só pode ser gerada após pedido finalizado
+
+🛠️ Tecnologias Previstas
+
+Front-end: (React / HTML / CSS / JS)
+
+Back-end: ()
+
+Banco de Dados: 
+
+Integração NF: 
+
+Geração de PDF: 
+
+Exportação Excel: 
+
+(Tecnologias podem ser ajustadas conforme evolução do projeto.)
+
+🎯 Objetivo do Projeto
+
+Desenvolver um sistema profissional de controle empresarial, aplicando:
+
+Boas práticas de arquitetura
+
+Separação de responsabilidades (MVC)
+
+Segurança de dados
+
+Performance
+
+Escalabilidade
+
+Organização de regras de negócio
+
+👨‍💻 Autores
+
+João Victor da Silva Cardoso | Bryan Moreira | Douglas Lokarelly
